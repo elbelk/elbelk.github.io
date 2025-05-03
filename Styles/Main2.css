@@ -1,0 +1,80 @@
+/* COlORS */
+/* rgp(21, 21, 21) */           /* Near Black, Background Color */
+/* White */                     /* Strong Text */
+/* Grey */                      /* Normal Text */
+/* #212529; */                  /* Dark Grey, Background Color */
+
+body {
+    background-color: #212529;
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    /* background-color: #333; */
+    background-color: rgb(21, 21, 21);
+    font-family: Arial;
+}
+
+#Nav_Name {
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.navbar .navlink {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown-container {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-container .dropdown-button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar .navlink:hover, .dropdown-container:hover .dropdown-button {
+    background-color: red;
+}
+
+.dropdown-links-container {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-links-container a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-links-container a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-container:hover .dropdown-links-container {
+    display: block;
+}

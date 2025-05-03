@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eli Elkin</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <!-- <meta name="description" content="Eli Elkin's personal website."> -->  <!-- Description of the website for search engines and social media. -->
+    <!-- <meta name="keywords" content="Eli Elkin, personal website, portfolio, projects, contact" /> -->   <!-- Keywords for search engines. -->
+
+    <!-- STYLE SHEETS -->
+    <!-- Boot Strap CSS -->     <!-- https://getbootstrap.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->   <!-- https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" href="Styles/Main.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div id="Navname_Container">
+            <h1 id="Nav_Name"><a href="elielkin.html">Eli Elkin</a></h1>
+        </div>
+        <div id="Navlinks_Container">
+            <div class="dropdown-container" onclick="openDropdownLinksContainer()">
+                <button class="nav-dropdown-button navlink">Projects
+                    <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-up display-none"></i>
+                </button>
+                <div class="dropdown-links-container">
+                    <!-- <a href="#"><i class="fa-solid fa-gamepad"></i> Game Development</a>
+                    <a href="#"><i class="fa-solid fa-laptop-code"></i> Web Development</a>
+                    <a href="#"><i class="fa-solid fa-pencil"></i> Other Projects</a> -->
+                    
+                    <!-- Make links into side by side clickable image cards instead -->
+                    <div id="Cards_Container">
+                        <div class="nav-card-image-container">
+                            <a href="game_development.html">
+                                <div>
+                                    <!-- <img src="Images/Screenshot 2025-03-17 174516.png" alt="Game Development"> -->
+                                    <!-- <img src="https://placehold.co/400x400" alt="Game Development"> -->
+                                    <img src="Images/SquareFrostPlaceHolderImage.jpg" alt="Game Development">
+                                </div>
+                                <div class="card-link-text-background"><p>&nbsp;</p></div>
+                                <div class="card-link-text-container">
+                                    <p>Game Development</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-card-image-container">
+                            <a href="#">
+                                <div>
+                                    <img src="https://placehold.co/400x400" alt="Web Development">
+                                </div>
+                                <div class="card-link-text-background"><p>&nbsp;</p></div>
+                                <div class="card-link-text-container">
+                                    <p>Web Development</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-card-image-container">
+                            <a href="#">
+                                <div>
+                                    <img src="https://placehold.co/400x400" alt="Other Projects">
+                                </div>
+                                <div class="card-link-text-background"><p>&nbsp;</p></div>
+                                <div class="card-link-text-container">
+                                    <p>Other Projects</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="navlink">Demo Reel</a>
+            <a href="#" class="navlink">Resume</a>
+        </div>
+        <button class="nav-toggle" onclick="toggleNavBar()">☰</button>
+    </nav>
+    <main>
+
+
+
+        <section class="project-header-section">
+            <h2 class="project-header">Slime Escape</h2>
+            <p class="project-label">2D Action Platformer</p>
+            <!-- <p class="project-label">______</p> -->
+            <hr class="project-header-line"/>
+        </section>
+        <section class="description-section">
+            <h2>Overview</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorum suscipit vitae eum nisi velit nulla optio fugit ad repellat? Totam, hic aut? Placeat tempore impedit ipsum error similique nobis. Amet consectetur adipisicing elit. Nam asperiores adipisci optio, aliquid quia voluptate suscipit, necessitatibus officia illum sed aspernatur maiores tempore, laudantium odio doloremque tempora iste laborum nulla. Pariatur aspernatur ducimus cumque ea minima explicabo! Aspernatur, iste. Omnis perspiciatis expedita placeat et nisi, nesciunt reprehenderit. Perferendis obcaecati quaerat esse ullam.</p>
+        </section>
+        <section class="video-section">
+            <h2>Gameplay Trailer</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/Up7PKpog4-4?rel=0&controls=1" title="Slime Escape Trailer" allowfullscreen></iframe>
+                <!-- width="939" height="528" -->
+            </div>
+        </section>
+        <section class="description-section">
+            <h2>What I learned</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aperiam libero dolor impedit veritatis doloremque, debitis ipsa eligendi voluptatibus mollitia non unde quia repudiandae dicta consectetur, aspernatur ipsam architecto! Rerum! Distinctio maxime aut assumenda praesentium perferendis ullam voluptatibus dignissimos in voluptatem? Ab voluptatum ullam rerum illo eos odit, iure qui nam! Modi unde quos adipisci animi voluptatibus hic eaque, id praesentium nam. Quod incidunt labore quisquam quo, facere expedita adipisci exercitationem ut quam?</p>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <div>
+            <a href="mailto:elbelkin21@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fa-solid fa-envelope"></i><!--Email-->
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-github"></i><!--Github-->
+            </a>
+            <a href="https://www.linkedin.com/in/eli-elkin-5a7b502b3/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-linkedin"></i><!--Linkedin-->
+            </a>
+        </div>
+        <p>&copy; 2025 Eli Elkin</p>
+    </footer>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- My Scripts -->
+    <script src="Scripts/navbar.js"></script>
+
+</body>
+</html>

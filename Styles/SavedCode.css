@@ -1,0 +1,533 @@
+/* MY ORIGINAL ABOUT ME STYLING */
+.about-me-container {
+    margin: 100px auto 0 auto;
+}
+
+hr {
+    border: 0;
+    /* margin: 40px 0; */
+    margin: 20px 0 40px 0;
+    height: 10px;
+    /* background-color: #878787; */
+    /* background-color: #548ae8; */
+    /* background-color: #7aa5f0; */
+    /* background-color: #0e2f67; */
+    /* background-color: #17191a; */
+
+    /* background-color: #5e5e5e; */
+    /* background-color: #404040; */
+    opacity: 1;
+    /* box-shadow: 0px 0px 16px #7aa5f0; */
+}
+
+.hr-short {
+    width: 80%;
+    margin: 0 auto;
+    height: 5px;
+}
+
+.about-me-container .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me-container img {
+    border: 10px solid rgb(21, 21, 21);
+    /* border: 10px solid #0e2f67; */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 16px #7aa5f0; */
+    box-shadow: 0px 0px 16px #0e2f67;
+}
+
+.about-me-text-container {
+    color: white;
+}
+
+/* .about-me-text-container div { */
+/* border: 10px solid rgb(21, 21, 21); */
+/* border: 10px solid #0e2f67; */
+/* border-radius: 10px; */
+/* box-shadow: 0px 0px 16px #0e2f67; */
+/* padding: 20px; */
+/* } */
+
+.about-me-text-container h2 {
+    font-size: 40px;
+}
+
+.about-me-text-container p {
+    color: #878787;
+}
+
+:root {
+    --button-color: #548ae8;
+}
+
+.button {
+    color: white;
+    background-color: var(--button-color);
+    padding: 7px 14px;
+    border: none;
+    /* Below CSS For Button Text Grow Hover Effect */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.button span {
+    /* For Button Text Grow Hover Effect */
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #3978e4;
+    cursor: pointer;
+    /* OPTIONAL BUTTON GLOW EFFECT */
+    box-shadow: 0px 0px 16px #0d3d8f;
+}
+
+.button:hover span {
+    /* For Button Text Grow Hover Effect */
+    transform: scale(1.05);
+}
+
+/* CHAT GPT PROVIDED ABOUT ME STYLING */
+.about-me-container {
+    margin: 120px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #1e1f23, #23262b);
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(84, 138, 232, 0.1);
+    max-width: 1200px;
+}
+
+.about-me-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.about-me-container img {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(84, 138, 232, 0.2);
+    max-width: 100%;
+    height: auto;
+    max-height: 450px;
+    transition: transform 0.3s ease;
+}
+
+.about-me-container img:hover {
+    transform: scale(1.02);
+}
+
+.about-me-text-container {
+    color: white;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(84, 138, 232, 0.15);
+}
+
+.about-me-text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.about-me-text-container .subtitle {
+    color: #7aa5f0;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.about-me-text-container p {
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.button {
+    color: white;
+    background-color: var(--button-color);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #3978e4;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(13, 61, 143, 0.6);
+}
+
+.button span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:hover span {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about-me-container .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-me-text-container {
+        text-align: center;
+    }
+}
+
+/* ALTERNATIVE CHAT GPT PROVIDED ABOUT ME STYLING */
+.about-me-container {
+    margin: 120px auto;
+    padding: 60px 40px;
+    background-color: #1b1d22;
+    border-left: 8px solid #548ae8;
+    border-radius: 10px;
+    max-width: 1100px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.about-me-container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 6px;
+    background: #548ae8;
+    border-radius: 3px;
+}
+
+.about-me-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.about-me-container img {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+    border: 4px solid #2e3036;
+    transition: box-shadow 0.3s ease;
+}
+
+.about-me-container img:hover {
+    box-shadow: 0 0 12px rgba(84, 138, 232, 0.3);
+}
+
+.about-me-text-container {
+    color: white;
+    padding: 20px 30px;
+    background-color: #24262c;
+    border-radius: 6px;
+    border-left: 4px solid #7aa5f0;
+    max-width: 580px;
+}
+
+.about-me-text-container h2 {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-bottom: 2px solid #7aa5f0;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.about-me-text-container .subtitle {
+    color: #a5b7e1;
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+    font-style: italic;
+}
+
+.about-me-text-container p {
+    color: #cccccc;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.button {
+    color: white;
+    background-color: var(--button-color);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3978e4;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(84, 138, 232, 0.6);
+}
+
+.button span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:hover span {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about-me-container .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-me-text-container {
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid #7aa5f0;
+    }
+
+    .about-me-container::before {
+        top: -10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HERE */
+.about-me-container {
+    /* margin: 120px auto; */
+    /* padding: 40px; */
+    margin: 50px auto 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(145deg, #1e1f23, #23262b);
+    box-shadow: 0 0 60px rgba(84, 138, 232, 0.1);
+    /* border-radius: 20px; */
+    max-width: 1200px;
+}
+
+.about-me-container .row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /* gap: 3rem; */
+}
+
+.about-me-container img {
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(84, 138, 232, 0.2);
+    max-width: 100%;
+    /* height: auto; */
+    /* max-height: 450px; */
+    transition: transform 0.3s ease;
+}
+
+.about-me-container img:hover {
+    transform: scale(1.02);
+}
+
+.about-me-text-container {
+    color: white;
+    /* max-width: 600px; */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(84, 138, 232, 0.15);
+}
+
+.about-me-text-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.about-me-text-container .subtitle {
+    color: #7aa5f0;
+    font-weight: 500;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+}
+
+.about-me-text-container p {
+    color: #b0b0b0;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+:root {
+    --button-color: #548ae8;
+}
+
+.button {
+    color: white;
+    background-color: var(--button-color);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #3978e4;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(13, 61, 143, 0.6);
+}
+
+.button span {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button:hover span {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .about-me-container .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-me-text-container {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+/* See My Work Section */
+.see-my-work-section {
+    background-color: #0f1b2d;
+    padding: 100px 40px;
+    color: #d0d0d0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.see-my-work-section h2 {
+    font-size: 2.75rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.see-my-work-section .work-section-subtext {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #7aa5f0;
+    margin-bottom: 60px;
+}
+
+.project-category-card {
+    display: flex;
+    background-color: #1d2635;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-category-card:hover {
+    transform: translateY(-6px);
+}
+
+.project-category-card img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.project-card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-card-content h3 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.project-card-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.project-card-content a {
+    text-decoration: none;
+    background-color: var(--button-color);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.project-card-content a:hover {
+    background-color: #3978e4;
+}
+
+@media (max-width: 768px) {
+    .project-category-card {
+        flex-direction: column;
+    }
+
+    .project-category-card img {
+        width: 100%;
+        height: auto;
+    }
+}

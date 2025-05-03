@@ -1,14 +1,359 @@
-<html>
-    <head></head>
-    <body>
-        <h1>Hello World!</h1>
-        <p>
-            My name is Eli Elkin. I am a current student at Boise State majoring in GIMM (games, interactive media, and mobile). 
-            I enjoy developing games in unity and working on a variety of creative projects.
-        </p>
-        <img src="https://placehold.co/600x400" />
-        <p>
-            <a href="mailto:elbelkin21@gmail.com">My Email</a>
-        </p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eli Elkin</title>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <!-- <meta name="description" content="Eli Elkin's personal website."> -->  <!-- Description of the website for search engines and social media. -->
+    <!-- <meta name="keywords" content="Eli Elkin, personal website, portfolio, projects, contact" /> -->   <!-- Keywords for search engines. -->
+
+    <!-- STYLE SHEETS -->
+    <!-- Boot Strap CSS -->     <!-- https://getbootstrap.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome -->   <!-- https://fontawesome.com/icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- My Style Sheet -->
+    <link rel="stylesheet" href="Styles/Main.css">
+</head>
+<body>
+    <nav class="custom-navbar">
+        <div id="Navname_Container">
+            <h1 id="Nav_Name"><a href="elielkin.html">Eli Elkin</a></h1>
+        </div>
+        <div id="Navlinks_Container">
+            <div class="dropdown-container" onclick="openDropdownLinksContainer()">
+                <button class="nav-dropdown-button navlink">Projects
+                    <i class="fa fa-caret-down"></i>
+                    <i class="fa fa-caret-up display-none"></i>
+                </button>
+                <div class="dropdown-links-container">
+                    <!-- <a href="#"><i class="fa-solid fa-gamepad"></i> Game Development</a>
+                    <a href="#"><i class="fa-solid fa-laptop-code"></i> Web Development</a>
+                    <a href="#"><i class="fa-solid fa-pencil"></i> Other Projects</a> -->
+                    
+                    <!-- Make links into side by side clickable image cards instead -->
+                    <div id="Cards_Container">
+                        <div class="nav-card-image-container">
+                            <a href="game_development.html">
+                                <div>
+                                    <!-- <img src="Images/Screenshot 2025-03-17 174516.png" alt="Game Development"> -->
+                                    <!-- <img src="https://placehold.co/400x400" alt="Game Development"> -->
+                                    <!-- <img src="Images/SquareFrostPlaceHolderImage.jpg" alt="Game Development"> -->
+                                    <img src="Images/GalacticBuzzKillThumbnail2.png" alt="Game Development">
+                                </div>
+                                <div class="card-link-text-background"><p>&nbsp;</p></div>
+                                <div class="card-link-text-container">
+                                    <p>Game Development</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-card-image-container">
+                            <a href="#">
+                                <div>
+                                    <!-- <img src="https://placehold.co/400x400" alt="Web Development"> -->
+                                    <img src="Images/GeometryDashWebsiteThumbnail.png" alt="Web Development">
+                                </div>
+                                <div class="card-link-text-background"><p>&nbsp;</p></div>
+                                <div class="card-link-text-container">
+                                    <p>Web Development</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="nav-card-image-container">
+                            <a href="#">
+                                <div>
+                                    <!-- <img src="https://placehold.co/400x400" alt="Other Projects"> -->
+                                    <img src="Images/FrozenBridgeThumbnail.png" alt="Other Projects">
+                                </div>
+                                <div class="card-link-text-background"><p>&nbsp;</p></div>
+                                <div class="card-link-text-container">
+                                    <p>Other Projects</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="navlink">Demo Reel</a>
+            <a href="#" class="navlink">Resume</a>
+        </div>
+        <button class="nav-toggle" onclick="toggleNavBar()">☰</button>
+    </nav>
+    <main>
+        <section class="hero-video-container">
+            <video autoplay loop muted>
+                <!-- Aspect Ratio Determines Height Of Video On The Page. Wider Aspect Ratio Means Less Tall -->
+                <source src="Videos/TestVideoBlueParticles.mp4" type="video/mp4">
+                <!-- <source src="Videos/SpelunkyTestVideo.mkv" type="video/mp4"> -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay">
+                <div class="video-overlay-text-container">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Scroll down to learn more about me.</p>
+                </div>
+            </div>
+            <!-- <p class="down-arrow"><i class="fa-solid fa-chevron-down"></i></p> -->
+            <p class="down-arrow">
+                <a href="#About_Me">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </p>
+        </section>
+
+        
+        <section id="About_Me" class="container about-me-container">
+            <div class="row">
+                <div class="col-md-5 portrait-container">
+                    <!-- IMAGE IS TOO BIG. UNNECESSARILY TAXING. REPLACE LATER -->
+                    <img src="Images/EliElkinPortraitCropped.png" alt="Eli Elkin Portrait" class="img-fluid">
+                </div>
+                <div class="col-md-1 divider-column"></div>
+                <div class="col-md-6 about-me-text-container">
+                    <div>
+                        <h2>About Me</h2>
+                        <p class="subtitle">Game Developer • Web Creator • Creative Thinker</p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Animi, quia eaque dolorum ex aperiam voluptates corporis 
+                            adipisci quas neque veritatis soluta corrupti nisi, quisquam 
+                            provident, illo cupiditate nam fugiat culpa.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Animi, quia eaque dolorum ex aperiam voluptates corporis 
+                            adipisci quas neque veritatis soluta corrupti nisi, quisquam 
+                            provident, illo cupiditate nam fugiat culpa.
+                        </p>
+                        <a href="#Contact_Me" class="btn btn-primary button">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="see-my-work-section">
+            <div class="overflow-container">
+                <div class="inner-div">
+                    <h2>See My Work</h2>
+                    <p class="work-section-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque totam maxime quasi distinctio maiores nobis. Voluptatum, accusantium dicta. Tenetur, dicta vitae illo ratione esse recusandae tempore voluptatibus? Possimus, natus quis?</p>
+                    <div class="project-category-card">
+                        <div class="project-category-image-container">
+                            <!-- <img src="Images/Screenshot 2025-03-17 174516.png" alt="Game Development Thumbnail" /> -->
+                            <!-- <img src="Images/SlimeEscapeThumbnail2.png" alt="Game Development Thumbnail" /> -->
+                            <img src="Images/GalacticBuzzKillThumbnail2.png" alt="Game Development Thumbnail" />
+                        </div>
+                        <div class="project-category-card-content">
+                            <h3>Game Development</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, quibusdam. A magnam praesentium asperiores, perferendis hic accusamus fuga architecto dicta, non excepturi perspiciatis modi vero! Incidunt odio perferendis voluptas unde?</p>
+                            <a href="game_development.html" class="view-projects-link">
+                                View Projects<i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-category-card">
+                        <div class="project-category-card-content">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus deleniti, quidem obcaecati excepturi, deserunt perspiciatis corporis adipisci corrupti sequi quae maiores omnis neque? Nihil rem molestiae repellat quos earum!</p>
+                            <a href="#" class="view-projects-link">
+                                View Projects<i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="project-category-image-container">
+                            <!-- <img src="Images/Screenshot 2025-03-17 174516.png" alt="Web Development Thumbnail" /> -->
+                            <img src="Images/GeometryDashWebsiteThumbnail.png" alt="Web Development Thumbnail" />
+                        </div>
+                    </div>
+                    <div class="project-category-card">
+                        <div class="project-category-image-container">
+                            <!-- <img src="Images/Screenshot 2025-03-17 174516.png" alt="Other Projects Thumbnail" /> -->
+                            <img src="Images/FrozenBridgeThumbnail.png" alt="Other Projects Thumbnail" />
+                        </div>
+                        <div class="project-category-card-content">
+                            <h3>Other Projects</h3>
+                            <p>Creative experiments, prototypes, and unique digital projects across video, animation, physical computing, and more.</p>
+                            <a href="#" class="view-projects-link">
+                                View Projects<i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="demo-reel-invite-section">
+            <div class="demo-reel-card-container">
+                <div class="demo-reel-card">
+                    <h2>Check Out My Demo Reel</h2>
+                    <p class="demo-reel-icon"><a href="#"><i class="fa-solid fa-video"></a></i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium amet consequatur facere sed voluptatem nemo modi, tempore eum temporibus dignissimos cum autem animi sequi exercitationem repellendus nostrum nesciunt accusamus laudantium.</p>
+                    <!-- <a href="#" class="cta-button">View Demo Reel</a> -->
+                </div>
+                <a href="#" class="btn btn-primary big-button">
+                    <span>View Demo Reel</span>
+                </a>
+            </div>
+        </section>
+
+
+        <section class="skills-section">
+            <!-- <hr style="border: 5px solid black; width: 80%; background-color: #23282c; margin: 0 auto;"/> -->
+            <h2>Skills</h2>
+            <p class="skills-section-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus accusamus qui iste alias ipsa in modi, voluptatem, fugiat perferendis blanditiis minima molestiae deleniti hic dolores aspernatur quas earum maiores sit repellat.</p>
+            <div class="container">
+                <div class="row skills-row">
+                    <div class="col-lg-3 col-md-6 col-12 skills-column">
+                        <div>
+                            <img src="Images/UnityLogoTransparent.png" alt="Skill 1" class="img-fluid skill-image">
+                            <!-- <p><i class="fa-brands fa-unity skill-icon"></i></p> -->
+                            <h3>Unity</h3>
+                            <p class="skill-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda soluta architecto laborum a consectetur, id rerum reiciendis cupiditate aliquid.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 skills-column">
+                        <div>
+                            <img src="https://placehold.co/250x250" alt="Skill 1" class="img-fluid skill-image" style="opacity: 0.4;">
+                            <h3>Skill 2</h3>
+                            <p class="skill-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto hic aut voluptas ex, explicabo, distinctio modi laboriosam fugit natus porro sapiente!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 skills-column">
+                        <div>
+                            <img src="https://placehold.co/250x250" alt="Skill 1" class="img-fluid skill-image" style="opacity: 0.4;">
+                            <h3>Skill 3</h3>
+                            <p class="skill-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A totam natus beatae fuga recusandae, expedita eum corporis et aperiam eius.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 skills-column">
+                        <div>
+                            <img src="https://placehold.co/250x250" alt="Skill 1" class="img-fluid skill-image" style="opacity: 0.4;">
+                            <h3>Skill 4</h3>
+                            <p class="skill-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium autem velit distinctio iure aspernatur nam, ipsa possimus id eum consequatur?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact_Me" class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis pariatur laboriosam dicta libero, aut odio dolores vero inventore veniam, non dignissimos et reprehenderit? Illo dolorum optio, modi alias velit officiis?</p>
+        
+            <div class="container form-container">
+                <form>
+                    <div class="form-group">
+                        <!-- <label>Name</label> -->
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Email Address</label> -->
+                        <input type="text" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label>Message</label> -->
+                        <textarea rows="7" placeholder="Message"></textarea>
+                    </div>
+                    <!-- send button, using a link as placeholder -->
+                    <a href="#" class="btn btn-primary button send-button">
+                        <span>Send <i class="fa-solid fa-paper-plane"></i></span>
+                        <!-- <span>Send <i class="fa-regular fa-paper-plane"></i></span> -->
+                    </a>
+                    
+                </form>
+            </div>
+        
+        
+        
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <!-- <section id="contact">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <h2>Contact Me</h2>
+                <hr style="height:5px;border-width:0;color:black;background-color:black">
+                </div>
+            </div>
+            <div class="row form-padding">
+                <div class="col-lg-8 col-lg-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate="">
+                    <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    </div>
+                    <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    </div>
+                    <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Message</label>
+                        <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    </div>
+                    <br>
+                    <div class="contact-btn text-center btn-style">
+                    <div class="btn-styleLine double-line page-scroll">
+                        <a href="#portfolio" class="btn btn-lg btn-outline">
+                        <i class="fa fa-fw fa-paper-plane"></i>Send
+                        </a>
+                    </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+        </section> -->
+    </main>
+
+    <footer class="footer">
+        <!-- <div class="container text-center">
+            <p>&copy; 2023 Eli Elkin. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div> -->
+        <div>
+            <a href="mailto:elbelkin21@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fa-solid fa-envelope"></i><!--Email-->
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-github"></i><!--Github-->
+            </a>
+            <a href="https://www.linkedin.com/in/eli-elkin-5a7b502b3/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <i class="fab fa-linkedin"></i><!--Linkedin-->
+            </a>
+        </div>
+        <p>&copy; 2025 Eli Elkin</p>
+    </footer>
+
+
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- My Scripts -->
+    <script src="Scripts/navbar.js"></script>
+
+</body>
 </html>

@@ -20,7 +20,7 @@
 <body>
     <nav class="custom-navbar">
         <div id="Navname_Container">
-            <h1 id="Nav_Name"><a href="elielkin.html">Eli Elkin</a></h1>
+            <h1 id="Nav_Name"><a href="elbelk.github.io">Eli Elkin</a></h1>
         </div>
         <div id="Navlinks_Container">
             <div class="dropdown-container" onclick="openDropdownLinksContainer()">
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <a href="#" class="navlink">Demo Reel</a>
-            <a href="#" class="navlink">Resume</a>
+            <a href="Eli_Elkin_Resume.pdf" class="navlink" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
         <button class="nav-toggle" onclick="toggleNavBar()">☰</button>
     </nav>
@@ -103,6 +103,35 @@
             <h2>What I learned</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aperiam libero dolor impedit veritatis doloremque, debitis ipsa eligendi voluptatibus mollitia non unde quia repudiandae dicta consectetur, aspernatur ipsam architecto! Rerum! Distinctio maxime aut assumenda praesentium perferendis ullam voluptatibus dignissimos in voluptatem? Ab voluptatum ullam rerum illo eos odit, iure qui nam! Modi unde quos adipisci animi voluptatibus hic eaque, id praesentium nam. Quod incidunt labore quisquam quo, facere expedita adipisci exercitationem ut quam?</p>
         </section>
+        <section class="carousel-section">
+            <h2>Gallery</h2>
+            <div class="carousel">
+                <div class="carousel-counter"></div>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="Images/Frozen_Bridge.png" alt=""></div>
+                        <div class="carousel-slide"><img src="Images/SlimeEscapeThumbnail2.png" alt=""></div>
+                        <div class="carousel-slide"><img src="Images/GalacticBuzzKillThumbnail2.png" alt=""></div>
+                        <div class="carousel-slide"><img src="https://placehold.co/700x300" alt=""></div>
+                        <div class="carousel-slide"><img src="https://placehold.co/400x500" alt=""></div>
+                        <!-- <div class="carousel-slide"><img src="https://placehold.co/663x360" alt=""></div> -->
+                        <div class="carousel-slide"><img src="https://placehold.co/640x360" alt=""></div>
+                    </div>
+                </div>
+                <button class="carousel-button prev"><i class="fa-solid fa-caret-left"></i></button>
+                <button class="carousel-button next"><i class="fa-solid fa-caret-right"></i></button>
+                <div class="carousel-indicators-container"></div>
+            </div>
+        </section>
+        <section class="link-section">
+            <div class="link-container">
+                <h2>Gameplay Trailer</h2>
+                <p>Want to see the full trailer I created for this game the following year?</p>
+                <a href="#" class="project-link">
+                    View Trailer Project<i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
 
 
 
@@ -129,6 +158,7 @@
 
     <!-- My Scripts -->
     <script src="Scripts/navbar.js"></script>
+    <script src="Scripts/carousel.js"></script>
 
 </body>
 </html>
